@@ -1,0 +1,12 @@
+<section>
+    <app-add-todo (addTodo)="onAddTodo($event)"></app-add-todo>
+    <h2 [className]="'mb-2 text-center text-uppercase'">Todo List</h2>
+    <ul>
+        <app-todo-item *ngFor="let item of todoItems" [item]="item" (delete)="deleteTodoItem(item.id)"
+            (complete)="toggleComplete(item.id)">
+        </app-todo-item>
+        <li *ngIf="todoItems.length === 0">
+            No more todo items.
+        </li>
+    </ul>
+</section>

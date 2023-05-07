@@ -1,0 +1,4 @@
+<form (submit)="onSubmit()">
+    <input type="text" placeholder="Enter a new todo" [(ngModel)]="newTodo" [name]="'todo-name'">
+    <button [className]="'btn btn-sm btn-success'"  type="submit">Add</button>
+</form>

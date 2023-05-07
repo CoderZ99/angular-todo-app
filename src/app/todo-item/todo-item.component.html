@@ -1,0 +1,7 @@
+<li>
+    <span [className]="'fs-3'" [class.completed]="item.complete">{{ item.name }}</span>
+    <div>
+        <button [className]="'btn btn-sm btn-primary'" (click)="onToggleComplete()">Toggle Complete</button>
+        <button [className]="'btn btn-sm btn-primary btn-danger'" (click)="onDelete()">Delete</button>
+    </div>
+</li>

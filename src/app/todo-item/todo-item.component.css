@@ -1,0 +1,24 @@
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+button {
+    margin-left: 0.5rem;
+}
+
+span {
+    max-width: calc(640px - 186px);
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

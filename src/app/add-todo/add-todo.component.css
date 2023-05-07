@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
